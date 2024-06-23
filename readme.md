@@ -2,4 +2,4 @@
 
 ## **Enlace GitHubPages**
 
-[https://ecored-sena.github.io/CF20_228118_ANALISIS_DESARROLLO_SOFTWARE/](https://ecored-sena.github.io/CF20_228118_ANALISIS_DESARROLLO_SOFTWARE/)
+[https://jhonuru.github.io/Aluralatam-ejercicio1/](https://jhonuru.github.io/Aluralatam-ejercicio1/)
