@@ -3,7 +3,18 @@ let input = document.querySelector(".container__input");
 document.getElementById("numero").disabled = false;
 document.getElementById("inicio").disabled = false;
 document.getElementById("reiniciar").disabled = true;
-let rango = prompt("Escribe el rango de números: ");
+let rango;
+
+//Validamos que solamente el usuario ingrese un valor numerico
+do {
+  rango = prompt("Escribe el rango de números: ");
+} while (!/^\d+$/.test(rango));
+
+if (rango !== null) {
+  // Usa la variable 'rango' aquí
+  //console.log("El rango ingresado es:", rango);
+}
+
 let numSecreto = Math.floor(Math.random() * rango) + 1;
 input.setAttribute("max", rango);
 let intentos = 1;
@@ -52,6 +63,19 @@ function limpiar() {
 function reiniciar() {
   location.reload();
 }
+
+function soloNumeros(e) {
+  var key = window.event ? e.keyCode : e.which;
+  if (event.keyCode === 8 || event.keyCode === 46) {
+    return true;
+  } else if (key < 48 || key > 57) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+input.addEventListener("keypress", soloNumeros);
 
 //Contenido HTML
 txt('h1', `Juego del número secreto`);
