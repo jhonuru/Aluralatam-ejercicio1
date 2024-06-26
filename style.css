@@ -108,7 +108,7 @@ p {
 }
 
 button {
-  font-family: "Inter", sans-serif;
+	font-family: "Inter", sans-serif;
 	cursor: pointer;
 }
 
@@ -127,5 +127,38 @@ button {
 	}
 	100% {
 		transform: translateX(10px);
+	}
+}
+
+.ocultar-div {
+	display: initial;
+}
+
+@media screen and (max-width: 1200px) {
+	h1 {
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		margin: 4%;
+	}
+	.ocultar-div {
+		display: none;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+	.container__informaciones {
+		padding: 1rem;
 	}
 }
